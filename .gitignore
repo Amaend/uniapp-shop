@@ -1,0 +1,5 @@
+/node_modules
+/unpackage/dist
+/.hbuilderx
+/uni.promisify.adaptor.js
+/uni_modules
