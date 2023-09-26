@@ -1,0 +1,124 @@
+{
+	// 配置页面配置文件，包括主页，列表，购物车，用户
+	"pages": [ //pages数组中第一项表示应用启动页
+	    {
+            "path" : "pages/home/home",
+            "style" :                                                                                    
+            {
+				// 显示的内容
+                "navigationBarTitleText": "元神优购",
+				// 是否可以下拉刷新
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cate/cate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/user",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	// 修改导航栏的样式
+	"globalStyle": {
+		// 导航栏的文字颜色
+		"navigationBarTextStyle": "black",
+		// 导航栏的文字
+		// "navigationBarTitleText": "元神优购",
+		// 导航栏的背景颜色
+		"navigationBarBackgroundColor": "#C00000",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"selectedColor": "#5CB6E6",
+		"list": [
+			{
+				"iconPath": "static/home.png",
+				"selectedIconPath": "static/home-active.png",
+				"pagePath": "pages/home/home",
+				"text": "主页"
+			},
+			{
+				"iconPath": "static/category.png",
+				"selectedIconPath": "static/category-active.png",
+				"pagePath": "pages/cate/cate",
+				"text": "分类"
+			},
+			{
+				"iconPath": "static/cart.png",
+				"selectedIconPath": "static/cart-active.png",
+				"pagePath": "pages/cart/cart",
+				"text": "购物车"
+			},
+			{
+				"iconPath": "static/user.png",
+				"selectedIconPath": "static/user-active.png",
+				"pagePath": "pages/user/user",
+				"text": "我的"
+			}
+		]
+	},
+    "subPackages": [
+        //创建分包
+        {
+            "root": "subpkg",
+            "pages": [
+                
+            {
+                    "path" : "goods_detail/goods_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    // 下拉刷新
+                    "enablePullDownRefresh": true,
+                    // 配置上拉触底
+                    "onReachBottomDistance": 150,
+                    "backgroundTextStyle": "dark",
+                    "backgroundColor": "#F8F8F8F8"
+                }
+                
+                }
+                ,{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+        }
+    ]
+}
